@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Apple(weight) {
+        this.weight=weight;
+        this.getWeight=function () {
+            return this.weight;
+        }
+
+    }
+    function Human() {
+        this.gender=true;
+        this.weight=0;
+        this.name="";
+        this.setName=function (name) {
+            this.name=name;
+        }
+        this.getName=function () {
+            return this.name;
+        }
+        this.setWeight=function (weight) {
+            this.weight=weight;
+        }
+        this.getWeight=function () {
+            return this.weight;
+        }
+        this.setGender=function (gender) {
+            this.gender=gender;
+        }
+        this.getGender=function () {
+            return this.gender;
+        }
+        this.checkGender=function () {
+            if (this.gender==true){
+                this.gender="is Male";
+            } else {
+                this.gender=" is Female";
+            }
+        }
+        this.checkApple=function (Aplle) {
+            if(Aplle.weight==0){
+                return true;
+            }else {
+                return false;
+            }
+        }
+        this.eat=function (Aplle) {
+            if (Aplle.weight>0) {
+                Aplle.weight--;
+                this.weight++;
+            }
+        }
+        this.say=function (s) {
+        console.log(s);
+        }
+    }
+    let a=new Apple(10);
+    let h=new Human();
+   console.log(a.getWeight());
+   h.setName("Adam");
+   console.log(h.getName());
+   h.setGender(false);
+   h.checkGender();
+   console.log(h.getGender());
+   h.eat(a);
+  console.log(a.getWeight()) ;
+  console.log(h.getWeight());
+   //h.checkApple(a);
+    h.eat(a);
+    console.log(a.getWeight()) ;
+    console.log(h.getWeight());
+    h.eat(a);
+    console.log(a.getWeight()) ;
+    console.log(h.getWeight());
+    h.eat(a);
+    console.log(a.getWeight()) ;
+    console.log(h.getWeight());
+    h.eat(a);
+    console.log(a.getWeight()) ;
+    console.log(h.getWeight());
+    h.eat(a);
+    console.log(a.getWeight()) ;
+    console.log(h.getWeight());
+    h.eat(a);
+    console.log(a.getWeight()) ;
+    console.log(h.getWeight());
+    h.eat(a);
+    console.log(a.getWeight()) ;
+    console.log(h.getWeight());
+    h.eat(a);
+    console.log(a.getWeight()) ;
+    console.log(h.getWeight());
+</script>
+</body>
+</html>
